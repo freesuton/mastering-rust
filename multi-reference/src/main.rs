@@ -11,4 +11,5 @@ fn main() {
     // 对&mut reference再进行一次reference是可以的
     // let s2 = &mut s1;
     println!("Hello, world!{}",s);
+    
 }
