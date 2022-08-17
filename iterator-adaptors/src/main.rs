@@ -28,6 +28,7 @@ fn main() {
         .collect();
 
     println!("{:?}", result);
+    //result: [6]
 
 
     //rev
@@ -35,6 +36,28 @@ fn main() {
     let v = [1,2,3];
     let result = v.iter().rev();
 
-    
+    for i in result {
+        println!("{}", i);
+    }
+    //result:
+    //3
+    //2
+    //1
 
+
+    // zip
+    // 适配器Zip可将两个迭代器压缩在_起生成_个新迭代器。实际上’它在两个迭代器上
+    // 同时迭代并返回_个元组’其中第_个元素来自第_个迭代器,第二个元素来自第二个迭 
+    // 代器°如果两个迭代器中任_迭代器返回None’适配器zip就返回None。
+    let v1 = [1,2,3];
+    let v2 = [2,3,6];
+
+    let result: Vec<i32> = v1.iter().zip(v2.iter())
+        .map(|(a, b)| a + b)
+        .filter(|x| x % 3 == 0)
+        .collect();
+
+    println!("{:?}", result);
+
+    //result: [3, 9]
 }
