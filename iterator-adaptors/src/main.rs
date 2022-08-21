@@ -19,14 +19,15 @@ fn main() {
     }
 
     // filter
-    //适配器hlter对迭代器中每个元素调用闭包并生成_个过滤元素的新迭代器°闭
-    //包会返 回tme或false’如果返回true则该元素放人新迭代器,否则该元素将被忽略。
+    //适配器filter对迭代器中每个元素调用闭包并生成_个过滤元素的新迭代器°闭
+    //包会返 回true或false’如果返回true则该元素放人新迭代器,否则该元素将被忽略。
     let v = [1,2,3];
     let result: Vec<i32> = v.iter()
         .map(|x| x + 3)
         .filter(|x| x % 3 == 0)
         .collect();
 
+    println!("{:?}", result);
     println!("{:?}", result);
     //result: [6]
 
