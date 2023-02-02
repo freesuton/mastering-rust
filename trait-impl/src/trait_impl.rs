@@ -1,11 +1,12 @@
-trait Geometry {
+
+pub trait Geometry {
     fn area(&self) -> f32;
     fn perimeter(&self) -> f32;
 }
 
-struct Rectangle {
-    width: f32,
-    height: f32,
+pub struct Rectangle {
+    pub width: f32,
+    pub height: f32,
 }
 
 impl Geometry for Rectangle {
@@ -18,8 +19,8 @@ impl Geometry for Rectangle {
     }
 }
 
-struct Circle {
-    radius: f32,
+pub struct Circle {
+    pub radius: f32,
 }
 
 impl Geometry for Circle{
@@ -32,13 +33,3 @@ impl Geometry for Circle{
     }
 }
 
-
-fn main() {
-    let rect = Rectangle {width: 8.8, height: 2.2};
-    println!("rect.area: {}, rect.perimeter: {}",
-        rect.area(), rect.perimeter());
-
-    let circle = Circle { radius: 3.0 };
-    println!("circle.area: {}, circle.perimeter: {}",
-        circle.area(), circle.perimeter());
-}

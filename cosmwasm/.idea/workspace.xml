@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62d385b2-5a61-4fe4-8b3c-f4031805fd84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../trait-system/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trait-system/src/main.rs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="opuiohnv" />
+  </component>
+  <component name="ProjectId" id="2JGkZltAwqszh3cnKPf9imSIwkF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62d385b2-5a61-4fe4-8b3c-f4031805fd84" name="Default Changelist" comment="" />
+      <created>1671711865139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671711865139</updated>
+      <workItem from="1671711870556" duration="1565000" />
+      <workItem from="1673041886924" duration="3489000" />
+      <workItem from="1675368119434" duration="284000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1377" y="320" key="SettingsEditor" timestamp="1671712069930">
+      <screen x="-1920" y="94" width="1920" height="1055" />
+    </state>
+    <state x="-1377" y="320" key="SettingsEditor/-1920.94.1920.1055/0.25.1680.1025@-1920.94.1920.1055" timestamp="1671712069930" />
+    <state x="-1047" y="464" key="com.intellij.ide.util.TipDialog" timestamp="1673041895398">
+      <screen x="-1920" y="94" width="1920" height="1055" />
+    </state>
+    <state x="-1047" y="464" key="com.intellij.ide.util.TipDialog/-1920.94.1920.1055/0.25.1680.1025@-1920.94.1920.1055" timestamp="1673041895398" />
+  </component>
+</project>
