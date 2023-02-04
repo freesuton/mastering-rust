@@ -5,9 +5,23 @@ use cosmwasm_std::Addr;
 use cw_storage_plus::Item;
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
-pub struct State {
-    pub count: i32,
-    pub owner: Addr,
+pub struct Config {
+    pub admin_address: Addr, //juno1xyz
 }
 
-pub const STATE: Item<State> = Item::new("state");
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
+pub struct Poll {
+    pub question: String,
+    pub yes_votes: u64,
+    pub no_votes: u64,
+}
+
+pub const CONFIG: Item<Config> = Item::new("config");
+
+// String -> Poll
+// "Do you love Spark IBC?" -> Poll {
+//                              question: "Do you love Spark IBC?",
+//                              yes_votes: 100,
+//                              no_votes: 50
+//                             }
+pub const POLLS: Map<String, Poll> = Map::new("polls"); // Stores poll variables, with a string index
