@@ -1,3 +1,4 @@
+use crate::state::Poll;
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
@@ -10,19 +11,28 @@ pub struct InstantiateMsg {
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum ExecuteMsg {
-    CustomMsg { val: String },
+    CreatePoll {
+        // ExecuteMsg::CreatePoll { question: "Do you love Spark IBC?" }
+        question: String
+    },
+    Vote {
+        question: String, // what question are we responding too?
+        choice: String,   // what is our answer? "yes" or "no"
+    },
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum QueryMsg {
-    CustomMsg { val: String },
+    GetPoll { question: String },
+    GetConfig {}
 }
 
+// This is what we return for our GetPoll route
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
-pub struct CustomResponse {
-    val: String,
+pub struct GetPollResponse {
+    pub poll: Option<Poll>, // Option means it can either be null (None) or a Poll
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
